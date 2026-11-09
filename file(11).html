@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Металлы в истории человечества</title>
+    <style>
+        :root {
+            --bg-color: #1a1a1a;
+            --card-bg: #2d2d2d;
+            --text-color: #e0e0e0;
+            --accent-copper: #b87333;
+            --accent-iron: #a19d94;
+            --accent-gold: #ffd700;
+            --accent-silver: #c0c0c0;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&q=80&w=1000') center/cover;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #fff;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background: #111;
+            padding: 15px 0;
+            z-index: 1000;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: var(--transition);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 80px;
+            padding-top: 60px; /* Offset for sticky nav */
+        }
+
+        .metal-card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            padding: 30px;
+            border-left: 10px solid transparent;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .copper { border-color: var(--accent-copper); }
+        .iron { border-color: var(--accent-iron); }
+        .gold { border-color: var(--accent-gold); }
+        .silver { border-color: var(--accent-silver); }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .copper h2 { color: var(--accent-copper); }
+        .iron h2 { color: var(--accent-iron); }
+        .gold h2 { color: var(--accent-gold); }
+        .silver h2 { color: var(--accent-silver); }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .info-box {
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .formula {
+            background: #000;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            display: block;
+            margin: 15px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #111;
+            font-size: 0.8rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Химические элементы в истории цивилизации</h1>
+    <p>От первых медных украшений до промышленной революции</p>
+</header>
+
+<nav>
+    <a href="#copper">Медь</a>
+    <a href="#iron">Железо</a>
+    <a href="#gold">Золото</a>
+    <a href="#silver">Серебро</a>
+</nav>
+
+<div class="container">
+    
+    <!-- МЕДЬ -->
+    <section id="copper">
+        <div class="metal-card copper">
+            <h2>Медь — Первый освоенный металл</h2>
+            <p>Медь стала первым металлом, который человек научился самостоятельно плавить. Её открытие ознаменовало начало эпохи металла и стало переходом от каменного века к бронзовому.</p>
+            
+            <div class="grid">
+                <div class="info-box">
+                    <strong>История:</strong> Самые ранние украшения датируются VIII тысячелетием до н.э. Позже люди научились создавать сплавы, такие как бронза (медь + олово).
+                </div>
+                <div class="info-box">
+                    <strong>Современность:</strong> Электротехника (высокая проводимость), электромобили (35-42 кг на авто), строительство и медицина (антимикробные свойства).
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЖЕЛЕЗО -->
+    <section id="iron">
+        <div class="metal-card iron">
+            <h2>Железо — От «небесного» к индустриальному</h2>
+            <p>Первым железом было метеоритное, которое ценилось как священный дар из-за своей прочности и необычных узоров (видманштеттеновы фигуры).</p>
+            
+            <div class="info-box">
+                <strong>Сыродутный процесс:</strong> Из-за высокой температуры плавления (~1538 °C) железо получали методом восстановления оксида железа угарным газом:
+                <span class="formula">Fe₂O₃ + 3CO → 2Fe + 3CO₂</span>
+                Результатом была крица — пористая масса, которую проковывали для удаления шлака.
+            </div>
+
+            <div class="grid" style="margin-top: 20px;">
+                <div class="info-box">
+                    <strong>Промышленный рывок:</strong> В XVIII-XIX веках переход на кокс (Абрахам Дарби) и пудлингование (Генри Корт) позволили массово производить качественный металл для железных дорог и мостов.
+                </div>
+                <div class="info-box">
+                    <strong>Значение:</strong> Железо сделало инструменты доступнее и прочнее бронзы, что привело к росту специализации и промышленной революции.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ЗОЛОТО -->
+    <section id="gold">
+        <div class="metal-card gold">
+            <h2>Золото — Символ власти и вечности</h2>
+            <p>Благодаря своей химической инертности (не тускнеет и не ржавеет), золото стало идеальным воплощением божественности и бессмертия.</p>
+            
+            <div class="grid">
+                <div class="info-box">
+                    <strong>Культура:</strong> «Плоть богов» в Египте и «слезы солнца» у инков. Золото использовалось для легитимации власти через короны и троны.
+                </div>
+                <div class="info-box">
+                    <strong>Экономика:</strong> От первых монет из электрума в Лидии до золотого стандарта XIX века. Сегодня остается главным резервным активом центробанков.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕРЕБРО -->
+    <section id="silver">
+        <div class="metal-card silver">
+            <h2>Серебро — Металл торговли и технологий</h2>
+            <p>Серебро связывало континенты и служило универсальным средством обмена, которое часто называли «золотом для бедных».</p>
+            
+            <div class="grid">
+                <div class="info-box">
+                    <strong>Глобальное влияние:</strong> Открытие рудников Потоси в Америке вызвало «революцию цен» в Европе и обеспечило поток валюты в Китай через Манильские галеоны.
+                </div>
+                <div class="info-box">
+                    <strong>Применение:</strong> Самая высокая электропроводность среди всех металлов. Используется в солнечных панелях, электронике и зеркалах.
+                </div>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Образовательный проект «Химические элементы в истории цивилизации»</p>
+</footer>
+
+</body>
+</html>
